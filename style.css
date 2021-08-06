@@ -27,7 +27,7 @@ body {
   stroke-dashoffset: 0;
 }
 
-.container .icon.logo path {
+.container .icon.logo path :hover {
   animation: animate-logo 2s linear forwards;
 }
 @keyframes animate-logo {
