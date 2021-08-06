@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .icon {
+  width: 200px;
+}
+
+.container .icon.logo path {
+  stroke-dasharray: 1300;
+  stroke-dashoffset: 0;
+}
+
+.container .icon.logo path {
+  animation: animate-logo 2s linear forwards;
+}
+@keyframes animate-logo {
+  0% {
+    stroke-dashoffset: 200;
+  }
+  40% {
+    stroke-dashoffset: 500;
+  }
+  80% {
+    stroke-dashoffset: 700;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
