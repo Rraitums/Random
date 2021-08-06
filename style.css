@@ -22,14 +22,15 @@ body {
   width: 200px;
 }
 
+.container .icon :hover {
+  animation: animate-logo 1.3s linear forwards;
+}
+
 svg {
   stroke-dasharray: 1300;
   stroke-dashoffset: 0;
 }
 
-svg {
-  animation: animate-logo 2s linear forwards;
-}
 @keyframes animate-logo {
   to {
     stroke-dashoffset: 2600;
